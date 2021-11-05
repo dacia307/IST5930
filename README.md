@@ -20,35 +20,34 @@ Each color is vulnerable to only 2 of the 6 possible exploits. First discover wh
 
 Vulnerability #1: SQL Injection
 
-Description:
 
-<img src="blue-vuln1.gif">
+![blue-vuln1](https://user-images.githubusercontent.com/79621826/140460894-4a3856df-4a99-4024-b7d9-1ec7e1756a0e.gif)
 
+Description: I added a ' at the end of the URL and the page doesn't redirect it says database query failed. This shows that an SQL vulnerability exists.
 
 
 ## Green
 
-Vulnerability #1: __________________
+Vulnerability #1: User enumeration
+![green-vuln1](https://user-images.githubusercontent.com/79621826/140461211-486e61a1-7c52-40db-8220-1412a4ba466b.gif)
 
-Description:
-
-<img src="green-vuln1.gif">
+Description: When I inputted a username and random password that didn't exist "Log in was unsuccessful" is displayed, but once I used the jmonroe99 username and password "Log in was unsuccessful" is displayed again but in bold because that user does exist.
 
 
 
 ## Red
 
-Vulnerability #1: __________________
+Vulnerability #1: Insecure direct object reference
+![red-vuln1](https://user-images.githubusercontent.com/79621826/140461512-1bb3c971-9003-4ee1-a2bf-769a2ec7a973.gif)
 
-Description:
+Description: We are able to access the private salesperson database by typing in 10 and 11 into "id=" I was able to see private information and a reasoning for someone being fired.
 
-<img src="red-vuln1.gif">
 
-Vulnerability #2: __________________
+Vulnerability #2: Cross site request forgery
+![red-vuln2](https://user-images.githubusercontent.com/79621826/140461929-cdbbed43-2905-4a4b-9c90-02e05c1853ab.gif)
 
-Description:
+Description: I was able to make changes to the user database and the site accepts post requests from a different source that contains a hidden form. 
 
-<img src="red-vuln2.gif">
 
 
 ## Notes
